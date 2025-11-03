@@ -1,0 +1,63 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav {
+    margin: 28px 0 28px 48px;  
+}
+
+
+.header-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 32px;
+}
+
+.header-links {
+    color: #040062;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid white;
+    border-spacing: 2px;
+}
+
+button {
+    background-color: #0013FF; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Отодвигает этот элемент вправо */
+    margin-left: auto; 
+    margin-right: 48px;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+.first-div {
+    background-color: #C7E3E9;
+    height: 640px;
+    margin: 0 48px 0 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abril Fatface', sans-serif;
+}
