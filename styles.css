@@ -32,6 +32,7 @@
     border-spacing: 2px;
 }
 
+/* так как мы не проходили элемент кнопки, я спросил помощи у ИИ */
 button {
     background-color: #0013FF; 
     color: white;
