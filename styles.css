@@ -14,6 +14,13 @@
     margin: 28px 0 28px 48px;  
 }
 
+.logo-navigation {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    color: #040062;
+    margin: 28px 0 28px 48px;  
+}
 
 .header-list {
     display: flex;
@@ -52,13 +59,61 @@ button:hover {
     background-color: #0056b3; 
 }
 
-.first-div {
-    background-color: #C7E3E9;
-    height: 640px;
-    margin: 0 48px 0 48px;
+.img {
+    display: block;
+    margin: 0 48px;
+    width: 100%;
+    height: auto;
+    /* отступ слева */
+    padding-right: 96px;
+    margin-bottom: 120px;
+}
+
+.first-div, .second-div {
     display: flex;
-    flex-direction: column;
+    margin: 0 48px;
     justify-content: center;
     align-items: center;
-    font-family: 'Abril Fatface', sans-serif;
+}
+
+.img-div {
+    margin: 70px;
+}
+
+.img-div-1, .img-div-1-1 {
+    display: flex;
+    background-color: #FEF1EF;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-div-2 {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+p {
+    margin: 32px 100px;
+}
+
+.title-p {
+    font-family: 'Abril Fatface', bold; 
+    font-size: 48px;
+    color: #040062;
+}
+
+.text-p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: #6D758D;
+}
+
+.second-div {
+    flex-direction: row-reverse;
+}
+
+.img-div-1-1 {
+    background-color: #C7E3E9;
 }
