@@ -5,19 +5,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Ubuntu;
 }
 
+/* header */
 .header {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.logo-nav {
+.header__div {
+    display: flex;
+    align-items: center;
+    width: 1296px;
+}
+
+.header__nav {
     margin: 28px 0 28px 48px;  
 }
 
-.logo-navigation {
+.header__logo {
     text-decoration: none;
     font-size: 32px;
     font-weight: bold;
@@ -25,7 +33,7 @@
     margin: 28px 0 28px 48px;  
 }
 
-.header-list {
+.header__list {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
@@ -33,7 +41,7 @@
     gap: 32px;
 }
 
-.header-links {
+.header__links {
     color: #040062;
     text-decoration: none;
     font-weight: bold;
@@ -41,15 +49,18 @@
     border: 1px solid white;
     border-spacing: 2px;
 }
+/* header */
 
-/* так как мы не проходили элемент кнопки, я спросил помощи у ИИ */
+/* button */
 button {
-    background-color: #0013FF; 
+    background-color: #0013FF;
+    width: 164px;
+    height: 40px; 
     color: white;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -62,28 +73,45 @@ button:hover {
     background-color: #0056b3; 
 }
 
-.img {
-    display: block;
-    margin: 0 48px;
-    width: 100%;
-    height: auto;
-    /* отступ слева */
-    padding-right: 96px;
-    margin-bottom: 120px;
+button:active {
+    background-color: #9b9bb5; 
 }
+/* button */
 
-.first-div, .second-div {
-    display: flex;
-    margin: 0 48px;
-    justify-content: center;
+
+/* div */
+/* images */
+.main  {
+    padding-top: 0;
+    padding-bottom: 180px;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.img-div {
-    margin: 70px;
+.main__img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
-.img-div-1, .img-div-1-1 {
+.img {
+    max-width: 1296px;
+}
+
+.right__div {
+    flex-direction: row-reverse;
+
+}
+
+.left__div_img, .right__div_img {
+    max-width: 234px;
+    max-height: 538px;
+    margin: 70px auto;
+    border-radius: 37px;
+}
+
+.left__div_rectangle, .right__div_rectangle {
     display: flex;
     background-color: #FEF1EF;
     width: 50%;
@@ -91,32 +119,50 @@ button:hover {
     justify-content: center;
 }
 
-.img-div-2 {
+.right__div_rectangle {
+    background-color: #C7E3E9;
+}
+
+
+.right__div_img {
+    background-color: #C7E3E9;
+}
+/* images */
+
+.left__div, .right__div {
+    display: flex;
+    align-items: center;
+    display: flex;
+    max-width: 1296px;
+}
+
+.left__div_text, .right__div_text {
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
+/* div */
+
 p {
     margin: 32px 100px;
 }
 
-.title-p {
+.title {
     font-family: Abril Fatface; 
     font-size: 48px;
     color: #040062;
 }
 
-.text-p {
+.text {
     font-family: Ubuntu;
     font-size: 18px;
     color: #6D758D;
 }
 
-.second-div {
-    flex-direction: row-reverse;
-}
-
-.img-div-1-1 {
-    background-color: #C7E3E9;
+/* footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
