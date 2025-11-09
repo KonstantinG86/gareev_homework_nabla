@@ -1,11 +1,20 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Ubuntu;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: Heebo;
+    font-size: 32px;
+    font-weight: bold;
+    color: #040062;
+    margin: 28px 0; 
+    text-shadow: 0 2px 5px #6c6c6c; 
 }
 
 /* header */
@@ -22,14 +31,6 @@
 }
 
 .header__nav {
-    margin: 28px 0 28px 48px;  
-}
-
-.header__logo {
-    text-decoration: none;
-    font-size: 32px;
-    font-weight: bold;
-    color: #040062;
     margin: 28px 0 28px 48px;  
 }
 
@@ -65,8 +66,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     /* Отодвигает этот элемент вправо */
-    margin-left: auto; 
-    margin-right: 48px;
+    margin-left: auto;
 }
 
 button:hover {
@@ -93,25 +93,21 @@ button:active {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-bottom: 120px;
 }
 
 .img {
     max-width: 1296px;
 }
 
-.right__div {
-    flex-direction: row-reverse;
-
-}
-
-.left__div_img, .right__div_img {
+.main__div_img {
     max-width: 234px;
     max-height: 538px;
     margin: 70px auto;
     border-radius: 37px;
 }
 
-.left__div_rectangle, .right__div_rectangle {
+.main__div_rectangle {
     display: flex;
     background-color: #FEF1EF;
     width: 50%;
@@ -119,21 +115,22 @@ button:active {
     justify-content: center;
 }
 
-.right__div_rectangle {
+.main__div_rectangle--reverse {
+    flex-direction: row-reverse;
     background-color: #C7E3E9;
 }
 
-
-.right__div_img {
-    background-color: #C7E3E9;
-}
 /* images */
 
-.left__div, .right__div {
+.main__div {
     display: flex;
     align-items: center;
     display: flex;
     max-width: 1296px;
+}
+
+.main__div--reverse {
+    flex-direction: row-reverse;
 }
 
 .left__div_text, .right__div_text {
