@@ -1,4 +1,7 @@
-﻿* {
+﻿@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -99,13 +102,13 @@ p {
 }
 
 .title-p {
-    font-family: 'Abril Fatface', bold; 
+    font-family: Abril Fatface; 
     font-size: 48px;
     color: #040062;
 }
 
 .text-p {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: Ubuntu;
     font-size: 18px;
     color: #6D758D;
 }
