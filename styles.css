@@ -17,6 +17,8 @@
     text-shadow: 0 2px 5px #6c6c6c; 
 }
 
+
+
 /* header */
 .header {
     display: flex;
@@ -51,10 +53,11 @@
     border: 1px solid white;
     border-spacing: 2px;
 }
-/* header */
+
+
 
 /* button */
-button {
+.acess-button {
     background-color: #0013FF;
     width: 164px;
     height: 40px; 
@@ -77,11 +80,10 @@ button:hover {
 button:active {
     background-color: #9b9bb5; 
 }
-/* button */
 
 
-/* div */
-/* images */
+
+/* main */
 .main  {
     padding-top: 0;
     margin-bottom: 100px;
@@ -101,14 +103,14 @@ button:active {
     max-width: 1296px;
 }
 
-.main__div_img {
+.main__div-img {
     max-width: 234px;
     max-height: 538px;
     margin: 70px auto;
     border-radius: 37px;
 }
 
-.main__div_rectangle {
+.main__div-rectangle {
     display: flex;
     background-color: #FEF1EF;
     width: 50%;
@@ -116,13 +118,13 @@ button:active {
     justify-content: center;
 }
 
-.main__div_rectangle--reverse {
+.main__div-rectangle--reverse {
     flex-direction: row-reverse;
     background-color: #C7E3E9;
 }
 
-/* images */
 
+/* text */
 .main__div {
     display: flex;
     align-items: center;
@@ -134,29 +136,27 @@ button:active {
     flex-direction: row-reverse;
 }
 
-.left__div_text, .right__div_text {
+.left__div-text, .right__div-text {
     align-items: center;
     justify-content: center;
     width: 50%;
 }
 
-/* div */
-
-p {
-    margin: 32px 100px;
-}
-
-.title {
+.main__title {
     font-family: Abril Fatface; 
     font-size: 48px;
     color: #040062;
+    margin: 32px 100px;
 }
 
-.text {
+.main__text {
     font-family: Ubuntu;
     font-size: 18px;
     color: #6D758D;
+    margin: 32px 100px;
 }
+
+
 
 /* footer */
 .footer {
@@ -210,7 +210,7 @@ p {
     color: #040062;
 }
 
-.footer__div_social {
+.footer__div-social {
     margin-left: auto;
     display: flex;
     align-items: flex-end;
@@ -218,11 +218,11 @@ p {
     flex-direction: column;
 }
 
-.footer__div_social p {
+.footer__div-social p {
     margin: 10px 0 0 0;
 }
 
-.footer__div_social_list_links {
+.footer__div-social-list-links {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
@@ -232,11 +232,9 @@ p {
     margin-bottom: 15px;
 }
 
-.footer__div_social_link {
+.footer__div-social-link {
     color: #040062;
     text-decoration: none;
     width: 16px;
     height: 16px;
 }
-
-/* footer */
