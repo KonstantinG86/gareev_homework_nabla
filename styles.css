@@ -83,34 +83,41 @@ button:active {
 
 
 
-/* main */
-.main  {
-    padding-top: 0;
-    margin-bottom: 100px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.main__img {
+/* first */
+.first {
     display: flex;
     justify-content: center;
     align-content: center;
     margin-bottom: 120px;
 }
 
-.img {
+.first__img {
     max-width: 1296px;
 }
 
-.main__div-img {
+
+
+/* main */
+.main  {
+    display: flex;
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 1296px;
+}
+
+.main--reverse {
+    flex-direction: row-reverse;
+}
+
+.main__img {
     max-width: 234px;
     max-height: 538px;
     margin: 70px auto;
     border-radius: 37px;
 }
 
-.main__div-rectangle {
+.main__rectangle {
     display: flex;
     background-color: #FEF1EF;
     width: 50%;
@@ -118,7 +125,7 @@ button:active {
     justify-content: center;
 }
 
-.main__div-rectangle--reverse {
+.main__rectangle--reverse {
     flex-direction: row-reverse;
     background-color: #C7E3E9;
 }
@@ -132,11 +139,7 @@ button:active {
     max-width: 1296px;
 }
 
-.main__div--reverse {
-    flex-direction: row-reverse;
-}
-
-.left__div-text, .right__div-text {
+.main__section-text {
     align-items: center;
     justify-content: center;
     width: 50%;
