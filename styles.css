@@ -201,18 +201,18 @@ button:active {
     color: #040062;
 }
 
-.footer__div-social {
+.footer__social {
     margin-left: auto;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
 }
 
-.footer__div-social p {
+.footer__social p {
     margin: 10px 0 0 0;
 }
 
-.footer__div-social-list-links {
+.footer__social-list-links {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
@@ -222,7 +222,7 @@ button:active {
     margin-bottom: 15px;
 }
 
-.footer__div-social-link {
+.footer__social-link {
     color: #040062;
     text-decoration: none;
     width: 16px;
